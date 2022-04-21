@@ -30,8 +30,8 @@ class Robot(object):
 class RestaurantRobot(Robot):
     """Handle data model on restaurant."""
 
-    def __init__(self, name=DEFAULT_ROBOT_NAME):
-        super().__init__(name=name)
+    def __init__(self, name=DEFAULT_ROBOT_NAME, speak_color='green'):
+        super().__init__(name=name, speak_color=speak_color)
         self.ranking_model = ranking.RankingModel()
 
     def _hello_decorator(func):
