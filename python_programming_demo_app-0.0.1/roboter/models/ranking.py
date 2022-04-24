@@ -19,7 +19,7 @@ class CsvModel(object):
         self.csv_file = csv_file
         if not os.path.exists(csv_file):
             pathlib.Path(csv_file).touch()
-
+            
 
 class RankingModel(CsvModel):
     """Definition of class that generates ranking model to write to CSV"""
